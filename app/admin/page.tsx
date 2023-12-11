@@ -1,0 +1,1 @@
+//This is the Admin Dashbord index page. This Next14 syntax

@@ -1,0 +1,1 @@
+//This is the store front index page. This Next14 syntax
