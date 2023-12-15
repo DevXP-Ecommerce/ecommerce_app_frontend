@@ -7,6 +7,22 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'xsm':'100px',
+      //=> @media (min-width: 260px) { ... }
+
+      'sm' : '360px',
+      // => @media (min-width: 360px) { ... }
+
+      'md': '630px',
+      // => @media (min-width: 640px) { ... }
+
+      'lg': '824px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -15,6 +31,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
 export default config
