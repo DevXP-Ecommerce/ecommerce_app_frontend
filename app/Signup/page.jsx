@@ -80,7 +80,7 @@ const Login = () => {
         </button>
       <p className='text-center text-[12px]'>Already have an account? 
       <Link href='/Login'>
-      <span className='text-[#fbb710] cursor-pointer'>LogIn</span>
+      <span className='text-[#fbb710] cursor-pointer'> LogIn</span>
       </Link>
       </p>
       </form> 

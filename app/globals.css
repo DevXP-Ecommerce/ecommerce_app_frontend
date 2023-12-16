@@ -136,7 +136,7 @@ li:hover::after {
 }
 
 .slide-in {
-  animation: slide-in 0.3s ease-out forwards;
+  animation: slide-in 0.5s ease-in-out forwards;
 }
 
 @keyframes slide-in {
@@ -163,4 +163,16 @@ li:hover::after {
     transform: translateX(-100%);
     opacity: 0
   }
+}
+
+.fade-text {
+  transition: opacity 0.5s ease; /* Adjust the duration and easing as needed */
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
 }

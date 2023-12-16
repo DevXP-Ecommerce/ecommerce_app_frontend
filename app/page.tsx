@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import { useState } from 'react'
 import Search from './components/Search';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 
 export default function Page() {
@@ -11,13 +12,17 @@ export default function Page() {
 
 
   return (
-    <div className='flex flex-row  '>
+    <div className='h-screen overflow-hidden '>
       
+     
+      <main className="flex  ">
+        <div className=' lg:w-[28%]'>
       <Navbar
         view = {view}
         setView = {setView}
       />
-      <main className="flex h-screen overflow-hidden flex-col items-center justify-between ">
+      </div>
+      <div className='flex-grow  h-screen overflow-y-scroll scrollbar-none xsm:w-[100%] '>
       {view === "Search" && <Search
         view = {view}
         setView = {setView}
@@ -26,7 +31,19 @@ export default function Page() {
         view = {view}
         setView = {setView}
       /> }
+      <div className=''>
+      <Footer 
+        view = {view}
+        setView = {setView}
+      />
+      </div>
+      </div>
       </main>
+      {/* <div className='bottom-0' w-full z-20>
+
+     
+      </div> */}
+      
     </div>
   )
 }
